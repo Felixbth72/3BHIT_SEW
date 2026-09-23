@@ -9,7 +9,7 @@ public class GewinnModel {
     private int rundenErgebnis;
 
     public GewinnModel() {
-
+        gesamtPunkte = 30;
     }
 
     public void berechneComputerZahl() {
