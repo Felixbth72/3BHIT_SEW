@@ -10,4 +10,8 @@ public class GrafikFrame extends JFrame {
         setLocationRelativeTo(null);
         setVisible(true);
     }
+
+    public static void main() {
+        new GrafikFrame();
+    }
 }
