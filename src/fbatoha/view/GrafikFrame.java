@@ -1,4 +1,7 @@
 package fbatoha.view;
 
-public class GrafikFrame {
+import javax.swing.*;
+
+public class GrafikFrame extends JFrame {
+
 }
