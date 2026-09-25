@@ -14,7 +14,7 @@ public class GrafikFrame extends JFrame {
         this.add(gpanel);
     }
 
-    public static void main() {
-        new GrafikFrame();
+    public GrafikPanel getGrafikPanel() {
+        return gpanel;
     }
 }
