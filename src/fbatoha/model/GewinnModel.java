@@ -3,7 +3,7 @@ package fbatoha.model;
 import java.util.Random;
 
 public class GewinnModel {
-    private int gesamtPunkte;
+    private int gesamtPunkte = 30;
     private int spielerZahl;
     private int computerZahl;
     private int rundenErgebnis;

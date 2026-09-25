@@ -39,7 +39,7 @@ public class GrafikPanel extends JPanel {
             tf[i].setPreferredSize(new Dimension(100, 40));
             cpanel.add(tf[i]);
         }
-        tf[1].setEnabled(false);
+        tf[1].setEditable(false);
 
         JPanel fpanel = new JPanel();
         this.btn = new JButton("Noch einmal!");
