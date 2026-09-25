@@ -82,4 +82,9 @@ public class GrafikPanel extends JPanel {
     public JTextField getTxtF(int i) {
         return tf[i];
     }
+
+    public void setFarbe(Color farbe) {
+        rergebniss.setBackground(farbe);
+        gergebniss.setBackground(farbe);
+    }
 }
