@@ -29,14 +29,13 @@ public class controler implements ActionListener {
             this.frame.getGrafikPanel().setTF(1, "" + this.gmodel.getComputerZahl());
             this.frame.getGrafikPanel().setRundenergebniss("" + this.gmodel.getRundenErgebnis());
             this.frame.getGrafikPanel().setGesamtpunkte("" + this.gmodel.getGesamtPunkte());
+            this.frame.getGrafikPanel().getTxtF(0).setEditable(false);
             this.frame.getGrafikPanel().getBtn().setEnabled(true);
 
             if (this.gmodel.hatVerloren()) {
                 this.frame.getGrafikPanel().setRundenergebniss("Verloren!");
-                this.frame.getGrafikPanel().getTxtF(0).setEditable(false);
             } else if (this.gmodel.hatGewonnen()) {
                 this.frame.getGrafikPanel().setRundenergebniss("Gewonnen!");
-                this.frame.getGrafikPanel().getTxtF(0).setEditable(false);
             }
         } else if (e.getActionCommand().equals("eversuch")) {
             if (this.gmodel.hatVerloren() || this.gmodel.hatGewonnen()) {
