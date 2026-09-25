@@ -50,4 +50,36 @@ public class GrafikPanel extends JPanel {
         this.add(cpanel, BorderLayout.CENTER);
         this.add(fpanel, BorderLayout.SOUTH);
     }
+
+    public String getRundenergebniss() {
+        return rergebniss.getText();
+    }
+
+    public void setRundenergebniss(String rundenergebniss) {
+        rergebniss.setText(rundenergebniss);
+    }
+
+    public String getGesamtpunkte() {
+        return gergebniss.getText();
+    }
+
+    public void setGesamtpunkte(String gesamtpunkte) {
+        gergebniss.setText(gesamtpunkte);
+    }
+
+    public JButton getBtn() {
+        return btn;
+    }
+
+    public String getTF(int i){
+        return tf[i].getText();
+    }
+
+    public void setTF(int i, String t){
+        tf[i].setText(t);
+    }
+
+    public JTextField getTxtF(int i) {
+        return tf[i];
+    }
 }
