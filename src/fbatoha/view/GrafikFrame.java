@@ -8,7 +8,7 @@ public class GrafikFrame extends JFrame {
     public GrafikFrame() {
         this.setTitle("Zahlen-Gewinnspiel");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(400,400);
+        this.setSize(600,300);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
         this.add(gpanel);
