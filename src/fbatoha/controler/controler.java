@@ -2,7 +2,6 @@ package fbatoha.controler;
 
 import fbatoha.model.GewinnModel;
 import fbatoha.view.GrafikFrame;
-import org.w3c.dom.ls.LSOutput;
 
 import java.awt.Color;
 import java.awt.event.*;
@@ -35,12 +34,6 @@ public class controler implements ActionListener {
             this.frame.getGrafikPanel().getTxtF(0).setEditable(false);
             this.frame.getGrafikPanel().getBtn().setEnabled(true);
 
-            if (this.gmodel.getRundenErgebnis() > 0) {
-                this.frame.getGrafikPanel().setFarbe(Color.GREEN);
-            } else {
-                this.frame.getGrafikPanel().setFarbe(Color.RED);
-            }
-
             if (this.gmodel.hatVerloren()) {
                 this.frame.getGrafikPanel().setRundenergebniss("Verloren!");
             } else if (this.gmodel.hatGewonnen()) {
@@ -55,7 +48,6 @@ public class controler implements ActionListener {
                 this.frame.getGrafikPanel().setTF(i, "");
             }
             this.frame.getGrafikPanel().setRundenergebniss("Tippe eine Zahl von 1 bis 9");
-            this.frame.getGrafikPanel().setFarbe(Color.WHITE);
             this.frame.getGrafikPanel().getTxtF(0).setEditable(true);
             this.frame.getGrafikPanel().getBtn().setEnabled(false);
         }
