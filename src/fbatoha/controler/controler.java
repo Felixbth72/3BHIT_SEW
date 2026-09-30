@@ -19,6 +19,7 @@ public class controler implements ActionListener {
 
     public static void main(String[] args) {
         new controler();
+        System.out.print("hallo");
     }
 
     @Override
