@@ -2,6 +2,7 @@ package fbatoha.controler;
 
 import fbatoha.model.GewinnModel;
 import fbatoha.view.GrafikFrame;
+import org.w3c.dom.ls.LSOutput;
 
 import java.awt.Color;
 import java.awt.event.*;
@@ -20,6 +21,7 @@ public class controler implements ActionListener {
 
     public static void main(String[] args) {
         new controler();
+        System.out.println("Hallo");
     }
 
     @Override
